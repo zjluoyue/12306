@@ -21,7 +21,7 @@ def sendPushBear(msg):
             sendPushBearUrls = urls.get("Pushbear")
             data = {
                 "sendkey": conf["pushbear_conf"]["send_key"].strip(),
-                "text": "易行购票成功通知-{}".format(time.strftime("%F %T")),
+                "text": "易行购票成功通知，{}".format(time.strftime("%Y-%m-%d %H:%M:%S")),
                 "desp": msg
             }
             httpClint = HTTPClient(0)
